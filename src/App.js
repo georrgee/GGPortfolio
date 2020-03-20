@@ -7,6 +7,10 @@ import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import { Nav } from 'react-bootstrap';
 import Footer from './components/Footer';
 
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+
 class App extends React.Component {
 
   constructor(props) {
@@ -53,6 +57,10 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
+          <Route path="/about" render={() => <AboutPage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
+          <Route path="/contact" render={() => <ContactPage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
 
           <Footer />
 
