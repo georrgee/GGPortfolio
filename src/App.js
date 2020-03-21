@@ -32,7 +32,7 @@ class App extends React.Component {
       },
 
       about: {
-        title: 'About myself...'
+        title: 'About me'
       },
 
       contact: {
@@ -59,7 +59,7 @@ class App extends React.Component {
           </Navbar>
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
-          <Route path="/about" render={() => <AboutPage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
+          <Route path="/about" render={() => <AboutPage title={this.state.about.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
           <Route path="/contact" render={() => <ContactPage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
 
           <Footer />
