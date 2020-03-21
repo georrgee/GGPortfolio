@@ -26,9 +26,9 @@ class App extends React.Component {
       ],
 
       home: {
-        title: '"There is no learning without Struggle"',
-        subTitle: 'Hungry to build iOS Apps constantly',
-        text: 'Take a look at the projects I have worked on below!'
+        title: 'There is no learning without struggle',
+        subTitle: 'Passionate iOS Engineer',
+        text: 'Check out my projects that I\'ve worked on below! '
       },
 
       about: {
@@ -46,7 +46,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>George Garcia</Navbar.Brand>
+            <Navbar.Brand className="font-weight-bold">George Garcia</Navbar.Brand>
 
             <Navbar.Toggle className="bordder-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
