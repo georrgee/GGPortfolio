@@ -37,3 +37,13 @@ code {
   font-size: 16px;
   margin: 0px;
 }
+
+.success-message {
+  color:#57A773;
+  padding: 10px 15px;
+}
+
+.error-message {
+  color:#EE6352;
+  padding: 10px 15px;
+}

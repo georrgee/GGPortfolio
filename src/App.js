@@ -26,9 +26,9 @@ class App extends React.Component {
       ],
 
       home: {
-        title: 'There is no learning without struggle',
+        title: 'Test Header',
         subTitle: 'Passionate iOS Engineer',
-        text: 'Check out my projects that I\'ve worked on below! '
+        text: 'Check out the projects that I\'ve worked on below! '
       },
 
       about: {
@@ -60,7 +60,7 @@ class App extends React.Component {
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
-          <Route path="/contact" render={() => <ContactPage title={this.state.home.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
+          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} subTitle= {this.state.home.subTitle} text={this.state.home.text}/> } />
 
           <Footer />
 
